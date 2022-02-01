@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" crossorigin src="/dist/assets/index.dbaa7a4d.js"></script>
+    <link rel="modulepreload" href="/dist/assets/vendor.c2c455b5.js">
+    <link rel="stylesheet" href="/dist/assets/vendor.0393ae10.css">
+    <link rel="stylesheet" href="/dist/assets/index.1cf1b3e9.css">
+  </head>
+  <body>
+    <div class="container">
+      <form class="mt-4 mb-2 d-flex align-items-end" id="addForm">
+        <div>
+          <label class="form-label" for="eventName">イベント</label>
+          <input
+            class="form-control"
+            type="text"
+            id="eventName"
+            value="Todo 1"
+            required
+          />
+        </div>
+
+        <div class="mx-3">
+          <label class="form-label" for="eventDate">日付</label>
+          <input
+            type="date"
+            value="2022-02-21"
+            class="form-control"
+            id="eventDate"
+            required
+          />
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-success">登録</button>
+        </div>
+      </form>
+
+      <button class="btn btn-danger mb-3" id="clearEvents">Clear Events</button>
+
+      <div id="calendar"></div>
+      
+    </div>
+  </body>
+</html>
