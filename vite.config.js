@@ -2,9 +2,10 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/docs/',
+  base: '/fullcalendar-demo/',
   build: {
     chunkSizeWarningLimit: 1500,
+    minify: true,
     rollupOptions: {
       output: {
         manualChunks(id) {
