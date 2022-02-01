@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/fullcalendar-demo/',
+  base: '/dist/',
   build: {
     chunkSizeWarningLimit: 1500,
     minify: true,
